@@ -1120,7 +1120,7 @@ public abstract class BasicRequest<T extends BasicRequest>
      * Should to return the tag of the object.
      */
     public Object getTag() {
-        return this.mTag;
+        return mTag==null?new Object():mTag.get();
     }
 
     /**
